@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "coc-clangd": ">=0.20.1",
+    "coc-explorer": ">=0.22.7",
+    "coc-go": ">=1.1.0",
+    "coc-pyright": ">=1.1.223",
+    "coc-rust-analyzer": ">=0.60.0"
+  }
+}

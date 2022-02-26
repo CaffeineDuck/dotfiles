@@ -1,0 +1,4 @@
+
+[Default Applications]
+x-scheme-handler/msteams=teams.desktop
+x-scheme-handler/mailto=microsoft-edge.desktop
