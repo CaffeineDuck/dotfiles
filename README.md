@@ -1,12 +1,12 @@
 dotfiles.
 
 * Download & install the dotfiles
-```
-curl -sSL https://github.com/CaffeineDuck/dotfiles/blob/master/setup.sh) | bash -s -- d
+```sh
+curl -sSL https://raw.githubusercontent.com/CaffeineDuck/dotfiles/refs/heads/master/setup.sh | bash -s -- -d
 ```
 
 * CLI Reference
-```
+```sh
 Usage: ./setup.sh [OPTIONS]
 Manage dotfiles
 
