@@ -22,14 +22,13 @@ znap source aloxaf/fzf-tab
 znap source zdharma-continuum/fast-syntax-highlighting
 
 znap eval iterm2 'curl -fsSL https://iterm2.com/shell_integration/zsh'
-znap eval asdf $(cat "$HOME/.asdf/asdf.sh")
-znap eval rye $(cat "$HOME/.rye/env")
 
 # Powerlevel10k config load; if it exists
 [[ ! -f ~/.p10k.zsh ]] || source "$HOME/.p10k.zsh"
 
-# Loading fzf for zsh
 source <(fzf --zsh)
+source "$HOME/.asdf/asdf.sh"
+source "$HOME/.rye/env"
 
 # Enable thefuck fuck alias
 eval $(thefuck --alias)
