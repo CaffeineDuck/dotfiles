@@ -74,6 +74,7 @@ function create_symlinks() {
 
 common_items=(
   ".tmux.conf:$HOME/.tmux.conf"
+  ".zshrc:$HOME/.zshrc"
   "nvim:$XDG_CONFIG_HOME/nvim"
   "alacritty:$XDG_CONFIG_HOME/alacritty"
 )
@@ -95,6 +96,8 @@ if [[ "$OSTYPE" == darwin* ]] && [ "$UPDATE_BREW" = true ]; then
     "alacritty"
     "ripgrep"
     "gh"
+    "fzf"
+    "thefuck"
   )
   for package in "${macos_packages[@]}"; do
     brew install "$package"
