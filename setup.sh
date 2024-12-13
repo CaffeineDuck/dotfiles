@@ -98,6 +98,8 @@ if [[ "$OSTYPE" == darwin* ]] && [ "$UPDATE_BREW" = true ]; then
     "gh"
     "fzf"
     "thefuck"
+    "zsh"
+    "eza"
   )
   for package in "${macos_packages[@]}"; do
     brew install "$package"
