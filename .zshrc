@@ -10,6 +10,7 @@ export PATH="$PATH:/opt/homebrew/bin"
 export PATH="$PATH:$HOME/.local/bin"
 export PATH="$PATH:$HOME/go/bin"
 export PATH=${PATH}:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
+export PATH="$PATH:/Users/$USER/.local/bin"
 
 export EDITOR="nvim"
 
@@ -34,6 +35,9 @@ znap eval iterm2 'curl -fsSL https://iterm2.com/shell_integration/zsh'
 source <(fzf --zsh)
 source "$HOME/.asdf/asdf.sh"
 source "$HOME/.rye/env"
+
+source "$HOME/.local/share/../bin/env"
+source "/Users/$USER/.deno/env"
 
 # Enable thefuck fuck alias
 eval $(thefuck --alias)
@@ -87,5 +91,5 @@ function viewcsv() {
 # Custom alias
 alias vim="nvim"
 alias la="ln -s -a"
-alias pyenv="python3 -m venv .venv"
+alias pyenv="python -m venv .venv"
 alias spyenv="source .venv/bin/activate" 
